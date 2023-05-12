@@ -1,0 +1,239 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+button{
+    font-family: inherit;
+}
+button:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+section:hover{
+    box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.15);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Poppins';
+}
+header{
+    width: 100%;
+    background-image: url(images/bg-hero-mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+    padding-top: 50px;
+    padding-bottom: 7px;
+    margin-bottom: 80px;
+}
+#header-top{
+    display: flex;
+    width: 90%;
+    height: 6vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-top img{
+    height: 80%;
+}
+#header-top button{
+    background-color: white;
+    padding: 1.2vw 6vw;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.05);
+-webkit-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.05);
+-moz-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.05);
+}
+
+#header-main{
+    width: 85%;
+    margin: 100px auto 30px auto;
+}
+#header-main-image{
+    flex-basis: 55%;
+    margin: 25px auto 20px auto;
+}
+#header-main-image img{
+    width: 100%;
+}
+#header-main-text{
+    width: 90%;
+    flex-basis: 45%;
+    margin: 30px auto;
+    text-align: center;
+}
+#header-main-text h1{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+#header-main-text button, #last-section button{
+    padding: 20px 70px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 50px;
+    margin: 20px auto;
+
+}
+main section{
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.05);
+}
+main section img{
+    width: 60vw;
+    margin: 20px auto 45px;
+}
+main section p{
+    color: hsl(208, 11%, 55%);
+}
+#last-section{
+    padding: 40px 0;
+    position: relative;
+    margin-top: 100px;
+    top: 110px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+#last-section h1{
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+#last-section button{
+    box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.1);
+}
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 180px 30px 70px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: top;
+    margin-top: 30px;
+}
+.footer-icon p{
+    flex-basis: 75%;
+    margin-top: 0;
+    margin-left: 35px;
+    font-size: 1.2rem;
+}
+.footer-icon img{
+    height: 25px;
+    margin-top: 5px;
+}
+#links1{
+    margin-top: 70px;
+}
+#links2{
+    margin-bottom: 60px;
+}
+.links{
+font-weight: 400;
+}
+#copyright{
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: hsl(192, 100%, 9%);
+    margin-top:  0;
+    padding-bottom: 30px;
+}
+#copyright p{
+    margin: 0 auto;
+    color: white;
+}
+
+@media (min-width: 1200px){
+    #header-top{
+        height: 3vw;
+        width: 85%;
+    }
+    #header-top button{
+        padding: 12px 70px;
+
+    }
+    #header-main{
+        display: flex;
+        justify-content: space-between;
+    }
+    #header-main>div{
+        width: auto;
+        flex-basis: 50%;
+    }
+    #header-main-text{
+        text-align: left;
+        padding-right: 100px;
+    }
+    main section{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 100px;
+        width: 85%;
+    }
+    main section img{
+        width: 40%;
+        flex-basis: 35%;
+        margin: 30px 0;
+    }
+    main section div{
+        flex-basis: 50%;
+        text-align: left;
+    }
+    main section p{
+        width: 80%;
+    }
+    #section2{
+        flex-direction: row;
+        padding-right: 25px;
+    }
+    #section2 div{
+        justify-self: left;
+    }
+    #section2 div p{
+        width: 100%;
+    }
+    #last-section{
+        flex-direction: column;
+        width: 55%;
+    }
+    footer{
+        display: flex; 
+        padding-left: 100px;
+        justify-content: space-between;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    #footer-company-info{
+        flex-basis: 40%;
+        margin-right: 100px;
+    }
+    #links1, #links2{
+        flex-basis: 30%;
+        margin: 55px 0;
+    }
+    #links1 h2, #links2 h2{
+        margin-bottom: 30px;
+    }
+}
