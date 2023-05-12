@@ -164,6 +164,9 @@ font-weight: 400;
 }
 
 @media (min-width: 1200px){
+    header{
+        background-image: url(images/bg-hero-desktop.svg);
+    }
     #header-top{
         height: 3vw;
         width: 85%;
